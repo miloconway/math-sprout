@@ -167,7 +167,7 @@ func _on_game_won():
 		button2.text = "Yes"
 	if button3:
 		button3.text = ""
-		button1.visible = false
+		button3.visible = false
 
 # Signal handler for game reset
 func _on_game_reset():
