@@ -1,0 +1,227 @@
+[gd_scene load_steps=20 format=3 uid="uid://cj6gefmtuysgl"]
+
+[ext_resource type="Texture2D" uid="uid://35v8hvk33r61" path="res://tree_sprout_16.png" id="2_112p8"]
+[ext_resource type="Script" uid="uid://bhoqtrp57d6rd" path="res://control.gd" id="2_j2q8x"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e2u21"]
+atlas = ExtResource("2_112p8")
+region = Rect2(0, 0, 128, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bss38"]
+atlas = ExtResource("2_112p8")
+region = Rect2(128, 0, 128, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tda05"]
+atlas = ExtResource("2_112p8")
+region = Rect2(256, 0, 128, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qn3nj"]
+atlas = ExtResource("2_112p8")
+region = Rect2(384, 0, 128, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l6pdb"]
+atlas = ExtResource("2_112p8")
+region = Rect2(512, 0, 128, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r657h"]
+atlas = ExtResource("2_112p8")
+region = Rect2(640, 0, 128, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f0urt"]
+atlas = ExtResource("2_112p8")
+region = Rect2(0, 256, 128, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jfkdj"]
+atlas = ExtResource("2_112p8")
+region = Rect2(128, 256, 128, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wt6go"]
+atlas = ExtResource("2_112p8")
+region = Rect2(256, 256, 128, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_436f3"]
+atlas = ExtResource("2_112p8")
+region = Rect2(384, 256, 128, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bcos8"]
+atlas = ExtResource("2_112p8")
+region = Rect2(512, 256, 128, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cmsyx"]
+atlas = ExtResource("2_112p8")
+region = Rect2(640, 256, 128, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_feppd"]
+atlas = ExtResource("2_112p8")
+region = Rect2(0, 512, 128, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aeaoo"]
+atlas = ExtResource("2_112p8")
+region = Rect2(128, 512, 128, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sps8e"]
+atlas = ExtResource("2_112p8")
+region = Rect2(256, 512, 128, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bnlop"]
+atlas = ExtResource("2_112p8")
+region = Rect2(384, 512, 128, 256)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wt6go"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e2u21")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bss38")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tda05")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qn3nj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l6pdb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r657h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f0urt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jfkdj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wt6go")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_436f3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bcos8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cmsyx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_feppd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aeaoo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sps8e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bnlop")
+}],
+"loop": true,
+"name": &"grow",
+"speed": 5.0
+}]
+
+[node name="Node" type="Node"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_j2q8x")
+
+[node name="HBoxContainer1" type="HBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 50.0
+offset_top = -180.0
+offset_right = 230.0
+offset_bottom = -120.0
+grow_vertical = 0
+alignment = 1
+
+[node name="Button" type="Button" parent="Control/HBoxContainer1"]
+custom_minimum_size = Vector2(180, 60)
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -90.0
+offset_top = -180.0
+offset_right = 90.0
+offset_bottom = -120.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="Button" type="Button" parent="Control/HBoxContainer2"]
+custom_minimum_size = Vector2(180, 60)
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -230.0
+offset_top = -180.0
+offset_right = -50.0
+offset_bottom = -120.0
+grow_horizontal = 0
+grow_vertical = 0
+alignment = 1
+
+[node name="Button" type="Button" parent="Control/HBoxContainer3"]
+custom_minimum_size = Vector2(180, 60)
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+
+[node name="QuizLabel" type="RichTextLabel" parent="Control"]
+custom_minimum_size = Vector2(580, 100)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -290.0
+offset_top = -430.0
+offset_right = 290.0
+offset_bottom = -330.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/bold_italics_font_size = 36
+theme_override_font_sizes/italics_font_size = 36
+theme_override_font_sizes/mono_font_size = 36
+theme_override_font_sizes/normal_font_size = 36
+theme_override_font_sizes/bold_font_size = 36
+horizontal_alignment = 1
+
+[node name="TreeSprite" type="AnimatedSprite2D" parent="Control"]
+position = Vector2(372, 475)
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_wt6go")
+animation = &"grow"
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
